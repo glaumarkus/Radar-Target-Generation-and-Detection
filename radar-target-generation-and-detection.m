@@ -70,8 +70,8 @@ for i=1:length(t)
     % *%TODO* :
     %For each time sample we need update the transmitted and
     %received signal. 
-    Tx(i) = cos(2 * pi * (fc * t(i) + slope * t(i)^2 / 2));
-    Rx(i) = cos(2 * pi * (fc * (t(i) - td(i)) + (slope * (t(i) - td(i))^2) / 2));
+    Tx(i) = cos(2 * pi * (frequency * t(i) + slope * t(i)^2 / 2));
+    Rx(i) = cos(2 * pi * (frequency * (t(i) - td(i)) + (slope * (t(i) - td(i))^2) / 2));
     
     % *%TODO* :
     %Now by mixing the Transmit and Receive generate the beat signal
